@@ -221,14 +221,15 @@ Berikut adalah struktur laporan yang direkomendasikan untuk bagian Modelling & R
 
 Berikut adalah rumus RMSE yang ditulis dengan format yang lebih jelas:
 
-\[
-\text{RMSE} = \sqrt{\frac{1}{N} \sum_{t=1}^{N} (A_t - f_t)^2}
-\]
+
+
+RMSE = sqrt( (1/N) * Σ (A_t - f_t)² )
 
 Keterangan:
-- \(A_t\): Nilai aktual (observasi).
-- \(f_t\): Nilai prediksi dari model.
-- \(N\): Jumlah total data.
+- A_t: Nilai aktual (observasi).
+- f_t: Nilai prediksi dari model.
+- N: Jumlah total data.
+
 
 Rumus ini digunakan untuk mengukur seberapa baik model dalam memprediksi nilai yang sebenarnya. Semakin kecil nilai RMSE, semakin baik kinerja model dalam memberikan prediksi yang akurat.
 
