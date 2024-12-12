@@ -219,14 +219,18 @@ Berikut adalah struktur laporan yang direkomendasikan untuk bagian Modelling & R
 
    - Formula untuk matriks RMSE adalah sebagai berikut:
 
-   \[
-   \text{RMSE} = \sqrt{\frac{1}{N} \sum_{t=1}^{N} (A_t - f_t)^2}
-   \]
+Berikut adalah rumus RMSE yang ditulis dengan format yang lebih jelas:
 
-   Keterangan:  
-   - \(A_t\): Nilai Aktual.  
-   - \(f_t\): Nilai hasil prediksi.  
-   - \(N\): Jumlah dataset.
+\[
+\text{RMSE} = \sqrt{\frac{1}{N} \sum_{t=1}^{N} (A_t - f_t)^2}
+\]
+
+Keterangan:
+- \(A_t\): Nilai aktual (observasi).
+- \(f_t\): Nilai prediksi dari model.
+- \(N\): Jumlah total data.
+
+Rumus ini digunakan untuk mengukur seberapa baik model dalam memprediksi nilai yang sebenarnya. Semakin kecil nilai RMSE, semakin baik kinerja model dalam memberikan prediksi yang akurat.
 
    Untuk menerapkan metrik ini, saya menambahkan **_'metrics=[tf.keras.metrics.RootMeanSquaredError()]'_** pada model.compile, yang menghasilkan kode berikut:
 
