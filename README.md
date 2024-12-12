@@ -46,7 +46,6 @@ Berdasarkan informasi yang Anda berikan:
 
 ### **Jumlah Missing Values per Kolom:**
 - Kolom **userId_y**, **rating_y**, dan **timestamp_y** juga memiliki beberapa *missing values* (masing-masing 201.672 dan 434.885 untuk **rating_y**).
-- Kolom **tag** memiliki jumlah *missing values* tertinggi, yaitu 6.126.372.
 - Kolom **userId_x**, **movieId**, **rating_x**, dan **timestamp_x** tidak memiliki *missing values*.
 
 ### **Jumlah Duplikat:**
