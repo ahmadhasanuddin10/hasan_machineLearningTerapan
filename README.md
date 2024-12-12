@@ -42,6 +42,23 @@ Variabel-variabel pada movie-recommendation-data adalah sebagai berikut :
 - tags : daftar key word dari movie tersebu
 
 tahapan yang dilakukan mengenai data adalah dengan melakukan exploratory data analysis, yaitu dengan melihat-lihat hubungan antar variabel bersarkan id. Serta menggabungkan seluruh variabel movie_all berdasarkan movieId dan variabel user_all berdasarkan userId
+Berdasarkan informasi yang Anda berikan:
+
+### **Jumlah Missing Values per Kolom:**
+- Kolom **userId_y**, **rating_y**, dan **timestamp_y** juga memiliki beberapa *missing values* (masing-masing 201.672 dan 434.885 untuk **rating_y**).
+- Kolom **tag** memiliki jumlah *missing values* tertinggi, yaitu 6.126.372.
+- Kolom **userId_x**, **movieId**, **rating_x**, dan **timestamp_x** tidak memiliki *missing values*.
+
+### **Jumlah Duplikat:**
+- Tidak ada data duplikat dalam dataset.
+
+### **Jumlah Data Awal:**
+- Dataset awal memiliki **6.359.585** baris.
+
+Jika Anda ingin menyelesaikan masalah *missing values*, opsi berikut dapat dipertimbangkan:
+1. **Menghapus kolom** dengan *missing values* yang sangat tinggi, seperti **tag**, jika dirasa tidak relevan untuk analisis.
+2. **Mengisi nilai hilang** dengan nilai yang sesuai, seperti median, rata-rata, atau mode, tergantung pada tipe datanya.
+
 
 ## Data Preparation
 
